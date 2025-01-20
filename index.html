@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <nav>
@@ -13,17 +14,17 @@
         </div>
         <div class="nav-list">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><button id="darkModeToggle">🌙</button></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <div class="container">
 
-        <header class="headeres">
+        <header class="headeres slide-bottom"  id="home">
             <div class="header-content">
                 <h2>Hello, i'm</h2>
                 <h1>Jbril Muhamed</h1>
@@ -32,10 +33,10 @@
                 </p>
                 <div class="btn-wrapper">
                     <div class="primery-btn btn">
-                        <button><p>About me</p> <img src="./img/profile-icon.svg" alt=""></button>
+                        <button><a href="#about"><p >About me</p> <img src="./img/profile-icon.svg" alt=""></a></button>
                     </div>
                     <div class="secondary-btn btn">
-                        <button><p>Project</p> <img src="./img/eye-icon.svg" alt=""></button>
+                        <button><a href="#projects"><p>Project</p> <img src="./img/eye-icon.svg" alt=""></a></button>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
             </div>
         </header>
 
-        <section class="about-me">
+        <section class="about-me shadow-inset-bottom" id="about">
             <div class="about-me-content">
                 <h1>About me:</h1>
                 <p>Hello I'm Jbril Muhamed, a dedicated React Frontend Developer with a keen eye for detail and a relentless passion for creating 
@@ -52,7 +53,7 @@
                     each refining my expertise in delivering React-based solutions that not only look good but also perform optimally.
                 </p> 
                 <div class="year">
-                <h1>2+</h1>
+                <h1>1+</h1>
                 <p>Years of experience as a frontend developer, I Designs into responsive, user-friendly expensives. Let's bring your digital vision to life.</p>
                 </div>
              </div>
@@ -66,16 +67,12 @@
                     <h2>WEB DEVELOPMENT</h2>
                 </div>
                 <div class="skill-3 skill">
-                    <img src="./img/mobile.svg" alt="">
-                    <h2>MOBILE DEVELOPMENT</h2>
-                </div>
-                <div class="skill-4 skill">
-                    <img src="./img/web-scrapping.svg" alt="">
-                    <h2>WEB SCRAPPING WITH PYTHON</h2>
+                    <img src="./img/javascript.svg" alt="">
+                    <h1>REACT JS AND NODE JS</h1>
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services shadow-inset-bottom" id="services">
             <h1>Services :</h1>
             <div class="service-box">
                 <div class="service-1 service">
@@ -88,11 +85,6 @@
                     <h1>WEB DEVELOPMENT</h1>
                     <P>Transforming ideas into functional and dynamic websites through expert web development.</P>
                 </div>
-                <div class="service-3 service">
-                    <img src="./img/mobile.svg" alt="">
-                    <h1>MOBILE DEVELOPMENT</h1>
-                    <p>Bringing innovation to the palm of your hand with seamless and engaging mobile app development.</p>
-                </div>
                 <div class="service-4 service">
                     <img src="./img/git.svg" alt="">
                     <h1>VERSION CONTROL</h1>
@@ -100,18 +92,13 @@
                 </div>
                 <div class="service-5 service">
                     <img src="./img/javascript.svg" alt="">
-                    <h1>NPM AND NODE JS</h1>
+                    <h1>REACT JS AND NODE JS</h1>
                     <P>Bulding daynamic and responsive web applications with the power of the MERN (mangoDB, Express, React, Node.js) stack.</P>
-                </div>
-                <div class="service-6 service">
-                    <img src="./img/web-scrapping.svg" alt="">
-                    <h1>WEB SCRAPPING</h1>
-                    <p>Harvesting actionable insights and data driven intelligence using advanced web scraping methods.</p>
                 </div>
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects slide-bottom" id="projects">
             <h1>Featured Projects :</h1>
             <p>Explore a curated collection of our proudest accomplishments - a testiment to our innovation, dedication, and the value we bring to every project.</p>
             <div class="project-1">
@@ -124,25 +111,17 @@
                 
             </div>
         </section>
-        <section class="contact">
-            <div class="get-in-tech">
+        <section class="contact" id="contact">
+            <div class="get-in-tech ">
                 <h1>GET IN TOUCH:</h1>
                 <P>Have a question, collaboration idea, or just want hello? Feel free to reach out</P>
                 <div class="social-img">
-                    <img src="./img/facebook.svg">
-                    <img src="./img/dribble.svg">
-                    <img src="./img/instagram.svg">
-                    <img src="./img/e-mail.svg">
+                    <a href="https://t.me/@JbrilMuhamed"><img width="30px" src="./img/telegram.png"></a>
+                    <a href="https://github.com/jbril-muhamed"><img width="30px" src="./img/github.png"></a>
+                    <a href="tel:+251920316019"><img width="30px" src="./img/telephone.png"></a>
+                    <a href="mailto:jemud9090@gmail.com"><img src="./img/e-mail.svg"></a>
                 </div>
             </div>
-            <div class="discuss">
-                <h3>Let's discuss how we can turn your vision into reality.</h3>
-                <input class="email" type="text" placeholder="NAME">
-                <input class="email" type="text" placeholder="EMAIL">
-                <input class="message" type="text" placeholder="MESSAGE">
-                <button class="send">send</button>
-            </div>
-
         </section>
         <footer>
             <div class="sub-footer">
@@ -152,15 +131,14 @@
                 <h5>@Copyrighit Resived</h5>
             </div>
             <div class="">
-                <img src="./img/facebook.svg">
-                <img src="./img/dribble.svg">
-                <img src="./img/instagram.svg">
-                <img src="./img/e-mail.svg">
+                <a href="https://t.me/@JbrilMuhamed"><img width="30px" src="./img/telegram.png"></a>
+                <a href="https://github.com/jbril-muhamed"><img width="30px" src="./img/github.png"></a>
+                <a href="tel:+251920316019"><img width="30px" src="./img/telephone.png"></a>
+                <a href="mailto:jemud9090@gmail.com"><img src="./img/e-mail.svg"></a>
             </div>
         </footer>
     </div>
-    <script src="script.js">
         
-    </script>
+    
 </body>
 </html>
